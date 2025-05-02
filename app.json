@@ -9,7 +9,7 @@
     "scheme": "template",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/adaptive-icon.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
