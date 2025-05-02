@@ -6,7 +6,7 @@ import Colors from './Colors';
 
 export const textInputDefaultProps = {
   textColor: Colors.light.theme.black,
-  backgroundColor: Colors.light.theme.white,
+  backgroundColor: Colors.light.theme.textInputBackgroundDark,
   placeholderTextColor: Colors.light.theme.placeholderColor,
   cursorColor: 'black',
   selectionColor: Platform.OS === 'ios' ? Colors.light.theme.white : '#D3D3D3',

@@ -19,9 +19,6 @@ const DefaultInput = React.forwardRef<TextInputNative, DefaultTextInputProps>(
       errorText,
       last,
       backgroundColor,
-      borderTopColor,
-      borderBottomColor,
-      borderBottomHeight,
       lineHeight,
       roundedRadius,
       ...others
@@ -38,6 +35,7 @@ const DefaultInput = React.forwardRef<TextInputNative, DefaultTextInputProps>(
           ref={ref}
           autoCorrect={false}
           value={value}
+          selectionColor="black"
           underlineStyle={{
             backgroundColor: 'transparent',
           }}
@@ -51,17 +49,14 @@ const DefaultInput = React.forwardRef<TextInputNative, DefaultTextInputProps>(
           ]}
           style={[
             {
+              borderWidth: 1,
               backgroundColor: errorText
                 ? backgroundColor
                 : backgroundColor || 'white',
-              borderTopColor: errorText
-                ? backgroundColor
-                : borderTopColor || 'white',
-              borderBottomColor: borderBottomColor || 'transparent',
-              borderBottomWidth: borderBottomHeight || 0,
+              borderColor: '#D3D3D3',
               height: vs(60),
               lineHeight,
-              borderRadius: roundedRadius ? hs(10) : hs(8), // Example for roundedRadius
+              borderRadius: roundedRadius ? hs(7) : hs(7), // Example for roundedRadius
             },
             style, // Merge with custom style
             last ? { borderBottomWidth: 2 } : {}, // Apply border if it's the last input
