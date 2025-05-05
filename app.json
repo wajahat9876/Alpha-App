@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "alpha-app",
-    "slug": "alpha-app",
+    "name": "Alpha-App",
+    "slug": "Alpha-App",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -10,7 +10,7 @@
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
-      "resizeMode": "cover",
+      "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "experiments": {
@@ -24,14 +24,16 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": ""
+      "bundleIdentifier": "com.wajahat959.AlphaApp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.anemoia.expotemplate"
+      }
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
@@ -46,7 +48,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": ""
+        "projectId": "ab36f4db-7fa0-4278-859e-6d6cb1d81cb3"
       }
     }
   }
